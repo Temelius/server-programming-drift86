@@ -33,9 +33,9 @@ public class Score {
 	
 	public Score() {}
 	
-	public Score(String user, String points, String time, boolean multiplayer, boolean verified, Car car, Map map) {
+	public Score(String username, String points, String time, boolean multiplayer, boolean verified, Car car, Map map) {
 		super();
-		this.username = user;
+		this.username = username;
 		this.points = points;
 		this.time = time;
 		this.multiplayer = multiplayer;
@@ -57,12 +57,12 @@ public class Score {
 		this.id = id;
 	}
 
-	public String getUser() {
+	public String getUsername() {
 		return username;
 	}
 
-	public void setUser(String user) {
-		this.username = user;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPhoto() {

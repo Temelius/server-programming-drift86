@@ -30,7 +30,7 @@
 			</tr>
 			<tr th:each="score : ${scores}"
 				th:if="${score.multiplayer == false}">
-				<td th:text="${score.user}"></td>
+				<td th:text="${score.username}"></td>
 				<td th:text="${score.points}"></td>
 				<td th:text="${score.time}"></td>
 				<td th:text="${score.multiplayer}"></td>
@@ -58,7 +58,7 @@
 			</tr>
 			<tr th:each="score : ${scores}"
 				th:if="${score.multiplayer == true}">
-				<td th:text="${score.user}"></td>
+				<td th:text="${score.username}"></td>
 				<td th:text="${score.points}"></td>
 				<td th:text="${score.time}"></td>
 				<td th:text="${score.multiplayer}"></td>
