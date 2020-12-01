@@ -35,7 +35,7 @@ public class ScoreRepositoryTest {
 		List<Score> scores = srepository.findAllByUser("Temecchi");
 		
 		assertThat(scores).hasSize(1);
-		assertThat(scores.get(0).getUser()).isEqualTo("Temecchi");
+		assertThat(scores.get(0).getUsername()).isEqualTo("Temecchi");
 		assertThat(scores.get(0).getCar().getName()).isEqualTo("EG86");
 	}
 	
