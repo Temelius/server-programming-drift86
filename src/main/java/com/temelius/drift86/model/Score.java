@@ -14,7 +14,7 @@ public class Score {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	private String user;
+	private String username;
 	private String points;
 	private String time;
 	private boolean multiplayer;
@@ -35,7 +35,7 @@ public class Score {
 	
 	public Score(String user, String points, String time, boolean multiplayer, boolean verified, Car car, Map map) {
 		super();
-		this.user = user;
+		this.username = user;
 		this.points = points;
 		this.time = time;
 		this.multiplayer = multiplayer;
@@ -58,11 +58,11 @@ public class Score {
 	}
 
 	public String getUser() {
-		return user;
+		return username;
 	}
 
 	public void setUser(String user) {
-		this.user = user;
+		this.username = user;
 	}
 
 	public String getPhoto() {
