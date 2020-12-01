@@ -32,7 +32,7 @@ public class ScoreRepositoryTest {
 	
 	@Test
 	public void findAllByUserShouldReturnMapsByUser() {
-		List<Score> scores = srepository.findAllByUser("Temecchi");
+		List<Score> scores = srepository.findAllByUsername("Temecchi");
 		
 		assertThat(scores).hasSize(1);
 		assertThat(scores.get(0).getUsername()).isEqualTo("Temecchi");
@@ -48,8 +48,8 @@ public class ScoreRepositoryTest {
 	
 	@Test
 	public void deleteScore() {
-		srepository.delete(srepository.findAllByUser("Temecchi").get(0));
-		List<Score> scores = srepository.findAllByUser("Temecchi");
+		srepository.delete(srepository.findAllByUsername("Temecchi").get(0));
+		List<Score> scores = srepository.findAllByUsername("Temecchi");
 		assertThat(scores).hasSize(0);
 		
 	}
